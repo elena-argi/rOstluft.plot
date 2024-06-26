@@ -176,7 +176,7 @@ CoordCartPolar <- ggproto("CoordCartPolar", CoordCartesian,
     }
 
     if (is.waive(scale_x$labels)) {
-      scale_x$labels <- c("N", "O", "S", "W")
+      scale_x$labels <- c("N", "E", "S", "W")
     }
 
     wd_info <- scale_x$break_info(c(0, 360))
