@@ -105,7 +105,7 @@ ggpolarplot <- function(data, ws, wd, z,
                         fill_scale = scale_fill_gradientn(colours = matlab::jet.colors(20), na.value = NA),
                         ylabels = scales::unit_format(unit = "m/s"),
                         breaks = waiver(),
-                        bg = NULL,
+                        bg = "white",
                         ...
 ) {
 
