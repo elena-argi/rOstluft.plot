@@ -90,7 +90,7 @@ ggwindrose <- function(data, ws, wd,
                        groupings = grp(),
                        fill_scale = scale_fill_viridis_d(),
                        reverse = TRUE,
-                       bg = "white",
+                       bg = NULL,
                        ...
 
 ) {
