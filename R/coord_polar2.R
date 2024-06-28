@@ -61,7 +61,7 @@
 #' p + coord_polar() + scale_y_continuous(breaks = seq(0, 100, 20), limits = c(0, 200))
 #'
 #' p + coord_polar2() + scale_y_continuous(breaks = seq(0, 100, 20), limits = c(0, 200))
-coord_polar2 <- function(theta = "x", start = 0, direction = 1, clip = "on", bg = NULL) {
+coord_polar2 <- function(theta = "x", start = 0, direction = 1, clip = "on", bg = "white") {
   theta <- match.arg(theta, c("x", "y"))
   r <- if (theta == "x") "y" else "x"
 
