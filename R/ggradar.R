@@ -119,7 +119,7 @@ ggradar <- function(data,
                     fun.args = list(),
                     nmin = 3,
                     fun_reorder = identity,
-                    bg = NULL,
+                    bg = "white",
                     ...
 ) {
 
