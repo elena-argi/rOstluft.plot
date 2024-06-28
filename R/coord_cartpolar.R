@@ -104,7 +104,7 @@
 #'   geom_raster(alpha = 0.5) +
 #'   scale_y_continuous(expand = c(0, 0.5, 0, 0.5))
 coord_cartpolar <- function(limit = NA, expand = TRUE, clip = "on",
-                             bg = NULL, grid = c("background", "foreground")) {
+                             bg = "white", grid = c("background", "foreground")) {
   grid <- match.arg(grid)
 
   ggproto(NULL, CoordCartPolar,
