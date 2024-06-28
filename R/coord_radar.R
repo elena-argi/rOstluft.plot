@@ -41,7 +41,7 @@
 #' # facets
 #' radar + facet_wrap(vars(stat)) +
 #'   coord_radar(start = - 22.5 / 180 * pi)
-coord_radar <- function (theta = "x", start = 0, direction = 1, bg = NULL) {
+coord_radar <- function (theta = "x", start = 0, direction = 1, bg = "white") {
   # sneaked from here: http://www.cmap.polytechnique.fr/~lepennec/R/Radar/RadarAndParallelPlots.html
   theta <- match.arg(theta, c("x", "y"))
   r <- if (theta == "x") "y" else "x"
